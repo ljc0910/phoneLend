@@ -42,7 +42,7 @@ export default {
     query() {
       let vm = this
       let ts = Date.parse(new Date())
-      this.$http.get('/api/getLendDetail',{
+      this.$http.get(`${this.API}getLendDetail`,{
         params: {
           pageNum: vm.currentPage,
           ts: ts

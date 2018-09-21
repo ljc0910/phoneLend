@@ -44,7 +44,7 @@ router.get('/getPhoneList',(req,res,next)=>{                //获取设备表单
         isDelete: isDeleteregex ,loanType:loanTyperegex}).then((docs)=>{
             pageNums = docs.length/perPageNum;
             Phonelist.find({ $or: [ { assetNum: regex },{brand:regex},{phoneType:regex}],
-                isDelete: isDeleteregex ,loanType:loanTyperegex}).limit(parseInt(perPageNum)).skip(Count).then((docs)=>{
+                isDelete: isDeleteregex ,loanType:loanTyperegex}).sort({_id:1}).skip(Count).limit(parseInt(perPageNum)).then((docs)=>{
                     res.json({
                         success:true,
                         data:docs,

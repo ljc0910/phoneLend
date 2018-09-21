@@ -78,7 +78,7 @@ export default {
       that.returnPhone.repayData.forEach(function(v) {
         mobileId = mobileId + v.id + ',';
       })
-      this.$http.post('/api/returnPhone',{mobileId:mobileId}).then(function(res) {
+      this.$http.post(`${this.API}returnPhone`,{mobileId:mobileId}).then(function(res) {
         if (res.data.success) {
           that.returnPhone.dialogVisible = false;
           that.handleType = {

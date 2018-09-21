@@ -147,7 +147,7 @@ export default {
     query() {
       let vm = this
       let ts = Date.parse(new Date())
-      this.$http.get('/api/getPhoneList',{
+      this.$http.get(`${this.API}getPhoneList`,{
         params: {
           search:vm.searchVal,
           loanType: vm.selectVal,
@@ -242,7 +242,7 @@ export default {
           type: 'warning'
       }).then(() =>{
         //点击确定
-          this.$http.post('/api/deletePhone',{id:item.id}).then(function(response) {
+          this.$http.post(`${this.API}deletePhone`,{id:item.id}).then(function(response) {
             vm.$message({
               type: 'success',
               message: '删除成功!'

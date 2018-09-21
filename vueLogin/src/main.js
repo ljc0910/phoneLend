@@ -13,6 +13,7 @@ import vHeader from './components/header'
 import vFooter from './components/footer'
 import vContent from './components/content'
 Vue.config.productionTip = false
+Vue.prototype.API = 'http://localhost:4000/api/'  //接口地址
 Vue.prototype.$http = axios
 Vue.use(ElementUI);
 Vue.component('v-header', vHeader) //注册全局组件

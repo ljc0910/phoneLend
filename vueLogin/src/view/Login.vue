@@ -26,7 +26,7 @@
 		},
 		methods: {
 			login() {
-				this.$http.post('/api/user', { 
+				this.$http.post(`${this.API}user`, { 
 					username: this.account,
 					passwords: this.password,
 					type: 'login'
@@ -45,7 +45,7 @@
 				})
 			},
 			register() {
-				this.$http.post('/api/user', {
+				this.$http.post(`${this.API}user`, {
 					username: this.account,
 					passwords: this.password,
 					type: 'register'

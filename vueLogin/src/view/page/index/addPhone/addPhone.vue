@@ -210,7 +210,7 @@ export default {
     },
     getMobileDetail() {
       var that = this;
-      this.$http.get('/api/Getphone', {
+      this.$http.get(`${this.API}Getphone`, {
         params: {
           id: that.deviceId //设备ID
         }
@@ -251,7 +251,7 @@ export default {
       var dataArr = that.addPhoneForm;
       that.$refs[addPhoneForm].validate((valid) => {
         if (valid) {
-          that.$http.post('/api/Addorchange', {
+          that.$http.post(`${this.API}Addorchange`, {
             id: that.deviceId,
             assetNum: dataArr.assetNum,
             brand: dataArr.brand,

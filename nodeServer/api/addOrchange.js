@@ -21,7 +21,7 @@ router.post('/Addorchange',(req,res,next)=>{
     if(id==null){   //新增操作
         Phonelist.find({},{id:1},(err,count)=>{    //查询已存id数
             if (err) return handleError(err);
-            let newId = count.length>1?Number(count[count.length-1].id)+1:0;//当前集合最大id+1            
+            let newId = count.length>0?Number(count[count.length-1].id)+1:0;//当前集合最大id+1            
             Phonelist.create({
                 id:newId,
                 isDelete:isDelete,

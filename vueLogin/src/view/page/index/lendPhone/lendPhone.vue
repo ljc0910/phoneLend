@@ -156,7 +156,7 @@ export default {
           that.lendPhone.lendPhoneList.forEach(function(v) {
             mobileId = mobileId + v.id + ',';
           })
-          this.$http.post('/api/lendPhone', {
+          this.$http.post(`${this.API}lendPhone`, {
             mobileId: mobileId, //手机id
             lendMan: dataArr.lendMan,
             lendManLeader: dataArr.lendManLeader,

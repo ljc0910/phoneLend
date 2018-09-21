@@ -160,7 +160,7 @@ export default {
       getMobileDetail(id){
       	var that = this;
       	var curTime = new Date().getTime();
-      	this.$http.get("/api/getPhoneInfo", {
+      	this.$http.get(`${this.API}getPhoneInfo`, {
       		params:{
       			id:id,		//设备ID
       			curTime:curTime
