@@ -1,3 +1,3 @@
-1.È·±£ÄãµÄµçÄÔÉÏ×°ÓĞnodejsÒÔ¼°mongodb£»
-2.cmd½øÈënodeServer£¬node appÆô¶¯ºó¶Ë´úÂë£»
-3.cmd½øÈëvueLogin£¬npm startÆô¶¯Ç°¶Ë´úÂë¡£
+1.ç¡®ä¿ä½ çš„ç”µè„‘ä¸Šè£…æœ‰nodejs8.xä»¥åŠmongodb3.xï¼›
+2.cmdè¿›å…¥nodeServerï¼Œnode appå¯åŠ¨åç«¯ä»£ç ï¼›
+3.cmdè¿›å…¥vueLoginï¼Œnpm startå¯åŠ¨å‰ç«¯ä»£ç ã€‚
