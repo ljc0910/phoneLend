@@ -7,3 +7,5 @@ this project for phone lend and renturn
   1.确保你的电脑上装有nodejs8.x以及mongodb3.x；
   2.cmd进入nodeServer，npm i，node app启动后端代码；
   3.cmd进入vueLogin，npm i，npm start启动前端代码。
+
+线上地址：www.jcgg.xyz/deviceSystem
